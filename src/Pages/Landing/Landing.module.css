@@ -1,0 +1,56 @@
+.txt{
+  font-family: var(--font);
+  font-size: 2rem;
+  margin-top: 4rem;
+  word-break: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: bold;
+  text-align: center
+}
+
+.img{
+  background-image: url('../../assets/art1.svg');
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  width: 93vw;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 40%;
+  position: absolute;
+  left: 2%;
+  top: 5%;
+}
+
+.margin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  margin-bottom: 42%;
+  transition: 1s;
+}
+
+.margin a{
+  position:absolute;
+  z-index:1;
+}
+
+@media(max-width: 40rem){
+  .img{
+    display: none;
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    margin-bottom: 40%;
+    position: absolute;
+    left: 1%;
+    top: 48%;
+  }
+  .margin{
+  margin-bottom: 100%;
+}
+}

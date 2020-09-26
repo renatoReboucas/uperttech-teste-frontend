@@ -1,0 +1,63 @@
+.login{
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  gap: 2rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9rem;
+}
+/* .login::before{
+  display: block;
+  content: '';
+  background: url('../../assets/soft.png') no-repeat center center;
+  background-size: cover;
+} */
+
+.card{
+  /* border: 1px solid var(--black); */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  background: #FFF;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.link{
+text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: var(--link);
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forms{
+  /* max-width: 30rem; */
+  padding: 1rem;
+}
+ 
+@media(max-width: 40rem){
+  .login{
+    grid-template-columns: 1fr;
+    margin-top: 17vh;
+    margin-top: 2rem;
+  }
+  .login::before{
+    display: none;
+  }
+  .forms{
+    max-width: 100%;
+  }
+
+  .card{
+  width: calc(100vw - 30px);
+}
+}

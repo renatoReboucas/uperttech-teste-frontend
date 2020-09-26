@@ -1,0 +1,40 @@
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+  line-height: 1;
+  font-size: 3rem;
+  margin:  1rem 0 ;
+  position:  relative;
+  margin-bottom: 1rem;
+}
+
+.form{
+  margin-bottom: 2rem;
+}
+
+.error{
+  color: #f31;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+
+.cadastro{
+  margin-top: 4rem;
+}
+.cadastro p{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle{
+  font-family:  var(--font);
+  line-height: 1;
+  font-size: 2rem;
+}
+
+
+
+
