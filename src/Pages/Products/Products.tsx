@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductItem from '../../Components/ProductItem/ProductItem';
 import styles from './Products.module.css';
 
 const Products: React.FC = () => {
+  const [hasLogin, setHasLogin] = useState(false);
   const [products, setProducts] = useState([
     {
       id: 1,
@@ -41,6 +42,12 @@ const Products: React.FC = () => {
       preco: 50.0,
     },
   ]);
+  useEffect(() => {
+    const hasLogin = window.localStorage.getItem('hasLogin');
+    // console.log('hasLogin', hasLogin);
+    !hasLogin ? window.location.href = '/login' : setHasLogin(true);
+  }, []);
+
   return (
     <>
       <div className={styles.containerTitle}>
