@@ -15,10 +15,11 @@ const Login: React.FC = () => {
     if (isLoginActive === true) {
       setLsLoginActive(false);
       setLink('Login');
-      setText('Já possui cadastro? ');
+      setText('Já possui cadastro?');
     } else {
       setLsLoginActive(true);
       setLink('Criar conta');
+      setText('Criar conta');
     }
   }
 
